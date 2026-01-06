@@ -21,7 +21,7 @@ def get_file_decision() -> str:
         
     if int(file) == 1:
         return open('adele.txt', 'r')
-    if int(file) == 2:
+    elif int(file) == 2:
         return open('news.txt', 'r')
     else:
         return open('trump.txt', 'r')
@@ -152,3 +152,4 @@ def generate_random_output(training_file: TextIO) -> str:
 
 training_file = get_file_decision()
 print(generate_random_output(training_file))
+
